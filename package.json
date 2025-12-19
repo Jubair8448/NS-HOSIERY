@@ -2,14 +2,15 @@
   "name": "nextjs-amazona",
   "version": "0.1.0",
   "private": true,
-  "scripts": {
-    "email": "email dev",
-    "seed": "npx tsx ./lib/db/seed.ts",
-    "dev": "next dev --turbopack",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
-  },
+"scripts": {
+  "email": "email dev",
+  "seed": "npx tsx ./lib/db/seed.ts",
+  "dev": "next dev",
+  "build": "next build --no-turbo",
+  "start": "next start",
+  "lint": "next lint"
+}
+,
   "dependencies": {
     "@auth/mongodb-adapter": "^3.7.4",
     "@emailjs/browser": "^4.4.1",
