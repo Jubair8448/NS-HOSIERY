@@ -1,3 +1,6 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
+import { SetStateAction } from 'react'
+
 import {
   CarouselSchema,
   CartSchema,
@@ -28,9 +31,7 @@ export type IReviewDetails = IReviewInput & {
   }
 }
 export type IProductInput = z.infer<typeof ProductInputSchema>
-
 export type Data = {
-  [x: string]: SetStateAction<string | null>
   settings: ISettingInput[]
   webPages: IWebPageInput[]
   users: IUserInput[]
@@ -52,6 +53,7 @@ export type Data = {
     isPublished: boolean
   }[]
 }
+
 // Order
 export type IOrderInput = z.infer<typeof OrderInputSchema>
 export type IOrderList = IOrderInput & {
