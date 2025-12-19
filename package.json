@@ -6,7 +6,8 @@
   "email": "email dev",
   "seed": "npx tsx ./lib/db/seed.ts",
   "dev": "next dev",
-  "build": "next build --no-turbo",
+  "build": "next build"
+,
   "start": "next start",
   "lint": "next lint"
 }
