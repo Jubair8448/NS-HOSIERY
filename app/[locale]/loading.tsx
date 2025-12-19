@@ -9,7 +9,7 @@ export default async function LoadingPage() {
 
         {/* Rotating Bra & Panty */}
         <div className="text-4xl text-red-500 animate-spin-fast">
-  <span role="img" aria-label="Bra">🩱</span>
+  <span role="img" aria-label="Bra">👙</span>
 </div>
 
 
@@ -20,7 +20,7 @@ export default async function LoadingPage() {
 
         {/* Brand Message */}
         <p className="text-sm text-gray-500">
-          Please wait while we prepare your <span className="font-bold">NewStyle-HOSIERY</span> experience...
+          Please wait while we prepare your <span className="font-bold">ARMAN HOSIERY</span> experience...
         </p>
       </div>
     </div>

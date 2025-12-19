@@ -1,6 +1,3 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
-import { SetStateAction } from 'react'
-
 import {
   CarouselSchema,
   CartSchema,
@@ -22,6 +19,7 @@ import {
 } from '@/lib/validator'
 import { z } from 'zod'
 
+// Review
 export type IReviewInput = z.infer<typeof ReviewInputSchema>
 export type IReviewDetails = IReviewInput & {
   _id: string
@@ -30,12 +28,18 @@ export type IReviewDetails = IReviewInput & {
     name: string
   }
 }
-export type IProductInput = z.infer<typeof ProductInputSchema>
+
+// Product
+export type IProductInput = z.infer<typeof ProductInputSchema> & {
+  videos: string[]   // ✅ videos field add kiya
+}
+
+// Data
 export type Data = {
   settings: ISettingInput[]
   webPages: IWebPageInput[]
   users: IUserInput[]
-  products: IProductInput[]
+  products: IProductInput[]   // ✅ ab yaha se bhi videos accessible hai
   reviews: {
     title: string
     rating: number
@@ -68,16 +72,16 @@ export type OrderItem = z.infer<typeof OrderItemSchema>
 export type Cart = z.infer<typeof CartSchema>
 export type ShippingAddress = z.infer<typeof ShippingAddressSchema>
 
-// user
+// User
 export type IUserInput = z.infer<typeof UserInputSchema>
 export type IUserSignIn = z.infer<typeof UserSignInSchema>
 export type IUserSignUp = z.infer<typeof UserSignUpSchema>
 export type IUserName = z.infer<typeof UserNameSchema>
 
-// webpage
+// WebPage
 export type IWebPageInput = z.infer<typeof WebPageInputSchema>
 
-// setting
+// Setting
 export type ICarousel = z.infer<typeof CarouselSchema>
 export type ISettingInput = z.infer<typeof SettingInputSchema>
 export type ClientSetting = ISettingInput & {

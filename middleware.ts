@@ -14,6 +14,8 @@ const publicPages = [
   '/product/(.*)',
   '/page/(.*)',
   // (/secret requires auth)
+   '/verify',
+  '/api/scratch/verify',
 ]
 
 const intlMiddleware = createMiddleware(routing)
