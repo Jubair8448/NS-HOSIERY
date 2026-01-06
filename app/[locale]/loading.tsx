@@ -20,7 +20,7 @@ export default async function LoadingPage() {
 
         {/* Brand Message */}
         <p className="text-sm text-gray-500">
-          Please wait while we prepare your <span className="font-bold">ARMAN HOSIERY</span> experience...
+          Please wait while we prepare your <span className="font-bold">NEWSTYLE-HOSIERY</span> experience...
         </p>
       </div>
     </div>
