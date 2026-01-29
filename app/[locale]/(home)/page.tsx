@@ -1,4 +1,3 @@
- 
 import BrowsingHistoryList from '@/components/shared/browsing-history-list'
 import { HomeCard } from '@/components/shared/home/home-card'
 import { HomeCarousel } from '@/components/shared/home/home-carousel'
@@ -33,58 +32,42 @@ export default async function HomePage() {
         href: `/search?category=${category}`,
       };
     })
-  );
+  )
 
-  const newArrivals = await getProductsForCard({
-    tag: 'new-arrival',
-  })
-  const featureds = await getProductsForCard({
-    tag: 'featured',
-  })
-  const bestSellers = await getProductsForCard({
-    tag: 'best-seller',
-  })
+  const newArrivals = await getProductsForCard({ tag: 'new-arrival' })
+  const featureds = await getProductsForCard({ tag: 'featured' })
+  const bestSellers = await getProductsForCard({ tag: 'best-seller' })
 
   const cards = [
     {
       title: t('Categories to explore'),
-      link: {
-        text: t('See More'),
-        href: '/search',
-      },
+      link: { text: t('See More'), href: '/search' },
       items: categoryIcons,
     },
     {
       title: t('Explore New Arrivals'),
       items: newArrivals,
-      link: {
-        text: t('View All'),
-        href: '/search?tag=new-arrival',
-      },
+      link: { text: t('View All'), href: '/search?tag=new-arrival' },
     },
     {
       title: t('Discover Best Sellers'),
       items: bestSellers,
-      link: {
-        text: t('View All'),
-        href: '/search?tag=new-arrival',
-      },
+      link: { text: t('View All'), href: '/search?tag=new-arrival' },
     },
     {
       title: t('Featured Products'),
       items: featureds,
-      link: {
-        text: t('Shop Now'),
-        href: '/search?tag=new-arrival',
-      },
+      link: { text: t('Shop Now'), href: '/search?tag=new-arrival' },
     },
   ]
 
   return (
     <>
-      <HomeCarousel items={carousels} />
+      {/* 👆 Google Ad Banner at the top */}
+    
 
-      {/* 👇 NEW CATEGORY ICON SECTION */}
+      <HomeCarousel items={carousels}  />
+
       <div className="bg-white py-4">
         <CategoryIcons categories={categoryIcons} />
       </div>
