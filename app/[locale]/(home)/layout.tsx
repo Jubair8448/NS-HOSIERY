@@ -22,7 +22,7 @@ export default async function HomeLayout({ children }: { children: React.ReactNo
 
       {/* WhatsApp Floating Button */}
       <Link
-        href="https://api.whatsapp.com/send?phone=919643860819&text=Hi%20there%2C%20I%20want%20to%20know%20more%20about%20Goldy%20Supplements"
+        href="https://api.whatsapp.com/send?phone=919643860819&text=Hi%20there%2C%20I%20want%20to%20know%20more%20about%20NEWSTYLE%20HOSIERY%20E-COMMERCE%20STORE%20and%20its%20products!"
         target="_blank"
         rel="noopener noreferrer"
         className="fixed bottom-5 right-1 shadow-green-500 hover:bg-green-600 text-yellow-900 p-3 rounded-full shadow-lg z-50"
