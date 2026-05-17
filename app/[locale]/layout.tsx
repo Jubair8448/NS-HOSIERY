@@ -1,4 +1,6 @@
+/* eslint-disable @typescript-eslint/ban-ts-comment */
 import { Geist, Geist_Mono } from 'next/font/google'
+// @ts-ignore
 import '../globals.css'
 import ClientProviders from '@/components/shared/client-providers'
 import { getDirection } from '@/i18n-config'

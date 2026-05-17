@@ -4,7 +4,7 @@ import Footer from '@/components/shared/footer'
 import { FaWhatsapp } from 'react-icons/fa'
 import Link from 'next/link'
 import Script from 'next/script'
-import PropellerNativeAd from '@/components/shared/PropellerNativeAd'
+//import PropellerNativeAd from '@/components/shared/PropellerNativeAd'
 export default async function HomeLayout({ children }: { children: React.ReactNode }) {
   return (
     <div className="flex flex-col min-h-screen">
@@ -15,7 +15,7 @@ export default async function HomeLayout({ children }: { children: React.ReactNo
   {/* Other meta tags */}
  
 </head>
-  <PropellerNativeAd /> 
+  {/* <PropellerNativeAd /> */}
 
       <main className="flex-1 flex flex-col">{children}</main>
       <Footer />
